@@ -1,557 +1,540 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1404.47">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-    span.Apple-tab-span {white-space:pre}
-  </style>
-</head>
-<body>
-<p class="p1">@charset "UTF-8";</p>
-<p class="p1">body {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>width: 100%; <span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span>height: auto;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-top: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-right: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-bottom: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-left: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-top: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-right: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-bottom: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-left: 0px;</p>
-<p class="p1">}</p>
-<p class="p1">#container {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>clear: both;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>height: auto;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>width: auto;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#container a:link {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-decoration: none;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#header {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>/*border-style: solid;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-width: thin;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-color: red;*/</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background: url("https://i.imgur.com/YsgGvcH.jpg") no-repeat center center fixed;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">  </span>-webkit-background-size: cover;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>-moz-background-size: cover;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>-o-background-size: cover;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background-size: cover;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: 600px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>display: block;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#trukrlogo {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: left;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin: 30px 0 40px 50px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#H p {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>display: inline;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: right;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-size: 15px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin: 45px 10px 40px 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 10px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>width: 100px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>text-align: left;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-weight: 300;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#W p {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>display: inline;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: right;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-size: 15px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin: 45px 10px 40px 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 10px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>width: 130px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>text-align: left;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-weight: 300;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#S_text p {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>display: inline;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: right;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-size: 15px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin: 45px 10px 40px 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 10px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>width: 60px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>text-align: left;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-weight: 300;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#S_img {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>display: inline;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: right;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-size: 15px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin: 45px 30px 40px 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 10px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>width: 20px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>text-align: left;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-weight: 300;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#headerimg{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>position: absolute;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>left: 0px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>top: 0px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>width: 100%;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#IoT{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background-color:rgba(255,255,255,0.8);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 300px auto auto auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 20px 0 20px 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#IoT h1{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 720px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 auto 10px auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-weight: black;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-size: 23px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#IoT p{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 720px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 10px auto 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 500;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-size: 15px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#buttons_pg1{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>clear: both;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 600px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: 60px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 40px auto auto auto;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.landing_blue_btn{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 200px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: 60px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background-color: #29A0D7;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: left;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 5px 20px 5px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.landing_blue_btn h3 {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>text-decoration: none;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.landing_blue_btn a:link, a:visited{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color:white;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.landing_blue_btn a:hover{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color:black;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.landing_white_btn{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 200px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: 60px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background-color: white;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: right;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 5px 20px 5px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.landing_white_btn h3 {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-color: #29A0D7;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.landing_blue_btn{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 200px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: 60px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background-color: #29A0D7;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: left;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 5px 20px 5px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#main {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>width: 100%;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>height: 100%;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-top: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-right: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-bottom: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-left: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-top: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-right: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-bottom: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-left: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>clear: both;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>overflow: hidden;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#in_out_pic{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>float: right;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>width: 70%;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#in_outboundpic{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>float: right;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#in_out_text{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: left;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 30%;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#pg2_btn_top {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 200px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: 60px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background-color: #29A0D7;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 5px auto 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 200px auto 0 auto;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#pg2_btn_top a{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 200px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: 60px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-color: white;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 5px auto 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-aligh: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>line-height: 60px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 10px 0 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 900;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#pg2_btn_top a:link, a:visited{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background: #29A0D7;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#pg2_btn_top a:hover{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color:black;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#pg2_btn_bottom {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 200px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: 60px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background-color: #29A0D7;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 10px auto 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 350px auto 0 auto;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#pg2_btn_bottom p{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color: white;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 10px auto 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 auto 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>line-height: 60px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#pg2_btn_bottom a:link, a:visited{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color:white;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#pg2_btn_bottom a:hover{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color:black;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#perks {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 640px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 60px auto 40px auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#perks img{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 40px 0 40px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#perks p{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-size: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 800;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 150px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>vertical-align: middle;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 10px 30px 0 30px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#deets1_img{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: left;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 40px 40px 20px 60px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#deets1{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: left;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 450px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 40px auto 20px 30px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#landinghr1 {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin: 30px auto 10px 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: left;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#deets1_text{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>clear: both;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: left;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 10px auto 20px 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#deets2_img{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>clear: both;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: right;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 40px 120px 20px 30px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#deets2{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: right;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-align: right;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 420px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 120px 40px 20px auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#landinghr2 {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin: 30px 0 10px auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: right;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#deets2_text{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: right;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>clear: both;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-align: right;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 10px 0 20px auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#in_out_bound{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 auto 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.in_out_hr{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: left;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>clear: both;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 auto 10px 100px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>line-height: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.in_out_bound_text{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: left;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>clear: both;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 auto 10px 100px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-size: 18px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.in_out_bound_small_text{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: left;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>clear: both;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 auto 10px 100px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-size: 14px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#form_details{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>clear: both;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 55%;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 60px auto 30px auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-style: solid;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-width: thin;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#top_info img{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>clear: both;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 10px auto 10px auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#camera{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: left;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 48%;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: 250px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 1% 0 1% 1%;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-style: solid;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-width: thin;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>align-self: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#gps{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: right;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 48%;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: 250px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 1% 1% 1% 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-style: solid;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>border-width: thin;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>align-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>align-self: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.center720{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 720px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 30px auto 60px auto;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>clear: both;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.center720 p{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: left;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>clear: both;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 auto 40px 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#landinghr3 {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin: 0 auto 10px 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>clear: both;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>float: left;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.backtoTop<span class="Apple-converted-space">  </span>{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>clear: both;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-right: 80px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-left: 30px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-top: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-right: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-bottom: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-left: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>float: right;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-weight: 300;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>font-size: 16px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-top: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>text-align: center;</p>
-<p class="p1">}</p>
-<p class="p1">.backtoTop img {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>width: 60px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>height: auto;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-top: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-right: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-bottom: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin-left: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-top: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-right: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-bottom: 0px;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>padding-left: 0px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.footer {</p>
-<p class="p1"><span class="Apple-tab-span">	</span>width: 100%;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>height: auto;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>clear: both;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>background-color: #29A0D7;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 0 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0 0 0 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.footer img{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>margin: 40px auto 60px auto;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>clear: both;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>background-color: #29A0D7;</p>
-<p class="p1">}</p>
-</body>
-</html>
+@charset "UTF-8";
+body {
+	width: 100%;  
+	height: auto;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+#container {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	clear: both;
+	overflow: hidden;
+	height: auto;
+	width: auto;
+}
+
+#container a:link {
+    text-decoration: none;
+}
+
+#header {
+    /*border-style: solid;
+    border-width: thin;
+    border-color: red;*/
+  background: url("https://i.imgur.com/YsgGvcH.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  text-align: center;
+	margin: 0 0 0 0;
+	display: block;
+	padding: 0 0 0 0;
+}
+
+#trukrlogo {
+  display: inline;
+  float: left;
+	overflow: hidden;
+	margin: 30px 0 40px 50px;
+	padding: 0 0 0 0;
+}
+
+#H p {
+	display: inline;
+  float: right;
+	overflow: hidden;
+	font-size: 15px;
+	margin: 45px 10px 40px 0px;
+	padding: 10px;
+	width: 100px;
+	text-align: left;
+	font-weight: 300;
+}
+
+#W p {
+	display: inline;
+  float: right;
+	overflow: hidden;
+	font-size: 15px;
+	margin: 45px 10px 40px 0px;
+	padding: 10px;
+	width: 130px;
+	text-align: left;
+	font-weight: 300;
+}
+
+#S_text p {
+	display: inline;
+  float: right;
+	overflow: hidden;
+	font-size: 15px;
+	margin: 45px 10px 40px 0px;
+	padding: 10px;
+	width: 60px;
+	text-align: left;
+	font-weight: 300;
+}
+
+#S_img {
+	display: inline;
+  float: right;
+	overflow: hidden;
+	font-size: 15px;
+	margin: 45px 30px 40px 0px;
+	padding: 10px;
+	width: 20px;
+	text-align: left;
+	font-weight: 300;
+}
+
+#headerimg{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
+
+#IoT{
+  background-color:rgba(255,255,255,0.8);
+  width: 100%;
+  height: auto;
+  margin: 300px auto auto auto;
+  padding: 20px 0 20px 0;
+}
+
+#IoT h1{
+  width: 720px;
+  height: auto;
+  margin: 0 auto 10px auto;
+  padding: 0 0 0 0;
+  font-weight: black;
+  font-size: 23px;
+}
+
+#IoT p{
+  width: 720px;
+  height: auto;
+  margin: 10px auto 0 auto;
+  padding: 0 0 0 0;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+#buttons_pg1{
+  display: block;
+  clear: both;
+  width: 600px;
+  height: 60px;
+  margin: 40px auto auto auto;
+}
+
+.landing_blue_btn{
+  width: 200px;
+  height: 60px;
+  background-color: #29A0D7;
+  display: inline-block;
+  float: left;
+	padding: 5px 20px 5px 20px;
+  margin: 0 0 0 0;
+}
+
+.landing_blue_btn h3 {
+	text-decoration: none;
+}
+
+.landing_blue_btn a:link, a:visited{
+  color:white;
+}
+
+.landing_blue_btn a:hover{
+  color:black;
+}
+
+.landing_white_btn{
+  width: 200px;
+  height: 60px;
+  background-color: white;
+  display: inline-block;
+  float: right;
+	padding: 5px 20px 5px 20px;
+  margin: 0 0 0 0;
+}
+
+.landing_white_btn h3 {
+	text-decoration: none;
+  text-color: #29A0D7;
+}
+
+.landing_blue_btn{
+  width: 200px;
+  height: 60px;
+  background-color: #29A0D7;
+  display: inline-block;
+  float: left;
+	padding: 5px 20px 5px 20px;
+  margin: 0 0 0 0;
+}
+
+#main {
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	clear: both;
+	overflow: hidden;
+}
+
+#in_out_pic{
+    display: inline-block;
+    float: right;
+    overflow: hidden;
+    width: 70%;
+    height: auto;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+#in_outboundpic{
+    display: block;
+    float: right;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+#in_out_text{
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  width: 30%;
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+#pg2_btn_top {
+  width: 200px;
+  height: 60px;
+  background-color: #29A0D7;
+  display: block;
+  text-align: center;
+	padding: 5px auto 0 auto;
+  margin: 200px auto 0 auto;
+}
+
+#pg2_btn_top a{
+  display: block;
+  width: 200px;
+  height: 60px;
+  text-color: white;
+	padding: 5px auto 0 auto;
+  text-aligh: center;
+  line-height: 60px;
+  margin: 10px 0 0 0;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+#pg2_btn_top a:link, a:visited{
+  color: white;
+  background: #29A0D7;
+}
+
+#pg2_btn_top a:hover{
+  color:black;
+}
+
+#pg2_btn_bottom {
+  width: 200px;
+  height: 60px;
+  background-color: #29A0D7;
+  display: block;
+  text-align: center;
+	padding: 10px auto 0 auto;
+  margin: 350px auto 0 auto;
+}
+
+#pg2_btn_bottom p{
+  text-align: center;
+  color: white;
+	padding: 10px auto 0 auto;
+  margin: 0 auto 0 auto;
+  line-height: 60px;
+}
+
+#pg2_btn_bottom a:link, a:visited{
+  color:white;
+}
+
+#pg2_btn_bottom a:hover{
+  color:black;
+}
+
+#perks {
+	display: block;
+  width: 640px;
+  height: auto;
+  margin: 60px auto 40px auto;
+  padding: 0 0 0 0;
+}
+
+#perks img{
+  display: inline;
+  margin: 0 40px 0 40px;
+  padding: 0 0 0 0;
+}
+
+#perks p{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  width: 150px;
+  height: 20px;
+  vertical-align: middle;
+  text-align: center;
+  margin: 10px 30px 0 30px;
+  padding: 0 0 0 0;
+}
+
+#deets1_img{
+  display: inline-block;
+  float: left;
+  margin: 40px 40px 20px 60px;
+  padding: 0 0 0 0;
+}
+
+#deets1{
+  display: inline-block;
+  float: left;
+  width: 450px;
+  margin: 40px auto 20px 30px;
+  padding: 0 0 0 0;
+}
+
+#landinghr1 {
+	margin: 30px auto 10px 0;
+  display: inline;
+  float: left;
+	padding: 0 0 0 0;
+}
+
+#deets1_text{
+  display: block;
+  clear: both;
+  float: left;
+  margin: 10px auto 20px 0;
+  padding: 0 0 0 0;
+}
+
+#deets2_img{
+  display: inline-block;
+  clear: both;
+  float: right;
+  margin: 40px 120px 20px 30px;
+  padding: 0 0 0 0;
+}
+
+#deets2{
+  display: inline-block;
+  float: right;
+  text-align: right;
+  width: 420px;
+  margin: 120px 40px 20px auto;
+  padding: 0 0 0 0;
+}
+
+#landinghr2 {
+	margin: 30px 0 10px auto;
+  display: inline;
+  float: right;
+	padding: 0 0 0 0;
+}
+
+#deets2_text{
+  display: block;
+  float: right;
+  clear: both;
+  text-align: right;
+  margin: 10px 0 20px auto;
+  padding: 0 0 0 0;
+}
+
+#in_out_bound{
+  display: block;
+  margin: 0 auto 0 auto;
+  padding: 0 0 0 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.in_out_hr{
+  display: block;
+  float: left;
+  clear: both;
+  margin: 0 auto 10px 100px;
+  padding: 0 0 0 0;
+  line-height: 100%;
+  overflow: hidden;
+}
+
+.in_out_bound_text{
+  display: block;
+  float: left;
+  clear: both;
+  margin: 0 auto 10px 100px;
+  padding: 0 0 0 0;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.in_out_bound_small_text{
+  display: block;
+  float: left;
+  clear: both;
+  margin: 0 auto 10px 100px;
+  padding: 0 0 0 0;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+#form_details{
+  display: block;
+  clear: both;
+  width: 55%;
+  height: auto;
+  overflow: hidden;
+  margin: 60px auto 30px auto;
+  padding: 0 0 0 0;
+  border-style: solid;
+  border-width: thin;
+}
+
+#top_info img{
+  display: block;
+  clear: both;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 10px auto 10px auto;
+  padding: 0 0 0 0;
+}
+
+#camera{
+  display: inline-block;
+  float: left;
+  width: 48%;
+  height: 250px;
+  overflow: hidden;
+  margin: 1% 0 1% 1%;
+  padding: 0 0 0 0;
+  border-style: solid;
+  border-width: thin;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#gps{
+  display: inline-block;
+  float: right;
+  width: 48%;
+  height: 250px;
+  overflow: hidden;
+  margin: 1% 1% 1% 0;
+  padding: 0 0 0 0;
+  border-style: solid;
+  border-width: thin;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.center720{
+  width: 720px;
+  height: auto;
+  margin: 30px auto 60px auto;
+  overflow: hidden;
+  clear: both;
+}
+
+.center720 p{
+  display: block;
+  float: left;
+  clear: both;
+  margin: 0 auto 40px 0;
+}
+
+#landinghr3 {
+	margin: 0 auto 10px 0;
+  display: block;
+  clear: both;
+  float: left;
+	padding: 0 0 0 0;
+}
+
+.backtoTop  {
+  text-decoration: none;
+	clear: both;
+	margin-right: 80px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	float: right;
+	font-weight: 300;
+	font-size: 16px;
+	margin-top: 0px;
+	text-align: center;
+}
+.backtoTop img {
+	width: 60px;
+	height: auto;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.footer {
+	width: 100%;
+	height: auto;
+	clear: both;
+	background-color: #29A0D7;
+  overflow: hidden;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.footer img{
+  display: block;
+	margin: 40px auto 60px auto;
+	clear: both;
+	background-color: #29A0D7;
+}
