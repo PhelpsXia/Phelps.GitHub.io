@@ -1,7 +1,7 @@
 
 window.onload = function dataCapture(){
   var cameraDiv = document.getElementById("camera");
-  cameraDiv.innerHTML = '<img src="https://www.w3schools.com/jsref/img_pulpit.jpg" />';
+  cameraDiv.innerHTML = '<img src="http://128.95.66.30:8081/" />';
   cameraDiv.width = 320;
   cameraDiv.height = 240;
   //cameraDiv = x; 
