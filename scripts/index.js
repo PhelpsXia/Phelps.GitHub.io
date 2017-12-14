@@ -10,20 +10,20 @@ window.onload = function dataCapture(){
 
 function getGPS(){
     var requestString = "http://128.95.66.30:5000";
-    alert(requestString);
+    //alert(requestString);
     request = new XMLHttpRequest();
     request.onload = displayMap;
-    console.log("send");
+    //console.log("send");
   //alert("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&APPID=" + openWeatherMapKey)
     request.open("get", requestString, true);
     request.send();
 }
 
 function displayMap(){
-  //var results = JSON.parse(this.responseText);
+  var results = JSON.parse(this.responseText);
   //alert(results);
   var gpsDiv = document.getElementById("gps");
   gpsDiv.innerHTML = '<img src="http://maps.googleapis.com/maps/api/staticmap?markers=' +
-    47.621434 + "," + -122.176692 +
+    results.lat + "," + results.long +
     '&zoom=10&size=300x230&sensor=false" />';
 }
