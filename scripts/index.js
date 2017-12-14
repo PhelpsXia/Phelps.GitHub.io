@@ -5,7 +5,7 @@ window.onload = function dataCapture(){
   cameraDiv.width = 320;
   cameraDiv.height = 240;
   //cameraDiv = x; 
-  getGPS();
+  displayMap();
 }
 
 function getGPS(){
@@ -20,10 +20,10 @@ function getGPS(){
 }
 
 function displayMap(){
-  var results = JSON.parse(this.responseText);
-  alert(results);
+  //var results = JSON.parse(this.responseText);
+  //alert(results);
   var gpsDiv = document.getElementById("gps");
   gpsDiv.innerHTML = '<img src="http://maps.googleapis.com/maps/api/staticmap?markers=' +
-    results.lat + "," + results.long +
+    47.621434 + "," + -122.176692 +
     '&zoom=10&size=300x230&sensor=false" />';
 }
